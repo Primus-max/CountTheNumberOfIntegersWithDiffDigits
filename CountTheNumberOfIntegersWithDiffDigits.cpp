@@ -18,7 +18,7 @@ int main()
 		int tens = (i / 10) % 10;
 		int units = i % 10;
 
-		if ((units == tens && tens != hundreds) || (hundreds == tens && units != hundreds))
+		if (units != tens && tens != hundreds && hundreds != units )
 			counter++;
 
 	}
